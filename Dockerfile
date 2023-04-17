@@ -4,8 +4,8 @@
 #set the workingdir
 #build a executabel file out of main.go named main, similar to running go build 
 #run the executable file
-#go to powershell and  ---  docker build -t GOLANG_WITH_DOCKER_FIRST_PROJECT .
-FROM golang:1.12.0-alpine.3 
+#go to powershell and  ---  docker build -t golang_with_docker_first_project .
+FROM golang:1.12.0-alpine3.9 
 RUN mkdir /app
 ADD . /app
 WORKDIR /app
